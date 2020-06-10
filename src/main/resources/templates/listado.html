@@ -7,28 +7,95 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/videoJuegos.css">
 
         <title>Tienda Sucho</title>
     </head>
     <body>
         <!-- As a link -->
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">Tienda Sucho </a>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="img/iconGame.png" width="30" height="30" alt="">
+                Bootstrap
+            </a>
         </nav>
 
-        <div class="container">
+        <div class="container mt-4 vj-destacados">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 mb-4">
                     <div class="card">
-                        <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+                        <img src="img/mario1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Super Mario 3</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <a href="#" class="btn btn-primary">Ver detalles</a>
                         </div>
                     </div> 
-            </div>
+                </div>
 
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="img/mario2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Super Mario 3</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver detalles</a>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-md-3 mb-4 ">
+                    <div class="card">
+                        <img src="img/mario3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Super Mario 3</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver detalles</a>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="img/marioworld.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Super Mario 3</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver detalles</a>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="img/yoshiisland.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Super Mario 3</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver detalles</a>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="img/marioworld.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Super Mario 3</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver detalles</a>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="img/marioworld.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Super Mario 3</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Ver detalles</a>
+                        </div>
+                    </div> 
+                </div>
             </div>
         </div>
 
