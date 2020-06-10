@@ -1,5 +1,5 @@
 
-package com.sucho.VideoJuegos.controller.domain;
+package com.sucho.VideoJuegos.domain;
 
 public class Videojuego {
     private String nombre;
