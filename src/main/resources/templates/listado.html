@@ -27,7 +27,13 @@
                         <img th:src="${juego.imagenUrl}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 th:text="${juego.nombre}"  class="card-title">Super Mario 3</h5>
+                            <p>
+                                <span class="badge badge-warning" th:text="${juego.distribuidor.nombre}"></span>
+                            </p>
                             <p th:text="${juego.descripcion}" class="card-text"></p>
+
+                        </div>
+                        <div class="card-footer text-muted">
                             <a href="#" class="btn btn-primary">Ver detalles</a>
                         </div>
                     </div> 
