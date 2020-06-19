@@ -3,6 +3,7 @@
     "attributes": {
         "th:text": {},
         "th:src": {},
-        "th:each": {}
+        "th:each": {},
+        "th:href": {}
     }
 }

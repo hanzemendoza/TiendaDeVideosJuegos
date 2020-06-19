@@ -16,4 +16,8 @@ public class VideojuegoService {
     public List<Videojuego> buscarDestacado(){
         return videojuegoRepository.buscarTodos();
     }
+    
+    public List<Videojuego> buscarPorDistribuidor(int distribuidorId){
+        return videojuegoRepository.buscarPorDistribuidor(distribuidorId);
+    }
 }
