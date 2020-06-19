@@ -1,4 +1,3 @@
-
 package com.sucho.VideoJuegos.service;
 
 import com.sucho.VideoJuegos.Repository.VideojuegoRepository;
@@ -15,6 +14,6 @@ public class VideojuegoService {
     }
     
     public List<Videojuego> buscarDestacado(){
-        return videojuegoRepository.findAll();
+        return videojuegoRepository.buscarTodos();
     }
 }
