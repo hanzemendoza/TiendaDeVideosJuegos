@@ -16,4 +16,5 @@ public class DistribuidorService {
     public List<Distribuidor> buscarTodos(){
         return distribuidorRepository.findAll();
     }
+    
  }
